@@ -22,12 +22,11 @@ class App extends NextApp {
     return (
       <React.Fragment>
         <Head>
-          <title>Web Project Template</title>
-          <link rel="icon" href="/favicon.ico" />
+          <title>eigenfunctor.io</title>
+          <link rel="icon" href="/eigenfunctor_logo.ico" />
         </Head>
         <ThemeProvider>
           <CssBaseline />
-          <Header />
           <Component {...pageProps} />
         </ThemeProvider>
       </React.Fragment>

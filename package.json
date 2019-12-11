@@ -1,10 +1,13 @@
 {
   "name": "eigenfunctor.github.io",
+  "homepage": "https://eigenfunctor.github.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export",
+    "deploy": "gh-pages -d out -b master",
     "start": "next start"
   },
   "devDependencies": {
@@ -21,11 +24,13 @@
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
     "@material-ui/system": "^4.5.2",
+    "gh-pages": "^2.1.1",
     "isomorphic-fetch": "^2.2.1",
     "moment": "^2.24.0",
     "next": "9.1.4",
     "ramda": "^0.26.1",
     "react": "16.12.0",
-    "react-dom": "16.12.0"
+    "react-dom": "16.12.0",
+    "react-particles-js": "^2.7.0"
   }
 }
