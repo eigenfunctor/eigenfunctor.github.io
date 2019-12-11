@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export",
-    "deploy": "gh-pages -d out -b master",
+    "export": "next build && next export && touch out/.nojekyll && cp CNAME out/",
+    "deploy": "gh-pages -t -d out -b master",
     "start": "next start"
   },
   "devDependencies": {

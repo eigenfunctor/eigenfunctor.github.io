@@ -24,8 +24,16 @@ const BannerContainer = styled.div`
   box-shadow: 0 3px 6px #6a6a6a;
 `;
 
+const Steps = styled.ul`
+  list-style: none;
+`;
+
 const Step = styled.li`
   padding: 12px 0;
+  &:before {
+    content: "✓";
+    padding-right: 8px;
+  }
 `;
 
 const Banner = () => {
@@ -33,12 +41,15 @@ const Banner = () => {
   return (
     <BannerContainer id="banner-particles">
       <Particles style={{ position: "absolute" }} />
-      <Box m="auto" maxWidth={MAX_WIDTH} position="relative" p={[6]}>
+      <Box m="auto" maxWidth={MAX_WIDTH} position="relative" px={[1]} py={[6]}>
         <Box>
           <Grid container direction="row" justify="space-between">
-            <Grid container direction="row-reverse">
-              <Box zIndex="0" position="absolute">
-                <img src="/eigenfunctor_logo.png" />
+            <Grid container direction="row" justify="center">
+              <Box m="auto" zIndex="0" position="absolute">
+                <img
+                  style={{ width: "300px", height: "auto", opacity: "0.4" }}
+                  src="/eigenfunctor_logo.png"
+                />
               </Box>
             </Grid>
             <Box zIndex="1">
@@ -46,9 +57,9 @@ const Banner = () => {
                 Engage your users with scalable web applications!
               </Typography>
               <Typography variant="h6">
-                <ul>
+                <Steps>
                   <Step>
-                    Build robust full stack isomorhpic web applications
+                    Build robust full-stack isomorphic web applications
                   </Step>
                   <Step>
                     Authenticate with all sorts of providers
@@ -61,7 +72,7 @@ const Banner = () => {
                     Configure and deploy application containers continuously to
                     Kubernetes
                   </Step>
-                </ul>
+                </Steps>
               </Typography>
             </Box>
           </Grid>
@@ -114,8 +125,9 @@ const AboutMe = () => {
               I am a full-stack web developer with 4 years of experience. I
               adapt very quickly to any project and can bring a lot of insight
               and value to the table. My mission is to work closely with your
-              team and help get you the most from modern technology, cloud
-              services, and computer science theory.
+              team and bring to your software infrastructure the best end-user
+              experience from modern technology, cloud services, and computer
+              science theory.
             </Description>
             <br />
             <br />
@@ -165,8 +177,8 @@ const ServiceCard = styled(Box)`
 
 const ServiceCards = () => {
   return (
-    <Box m="auto" maxWidth={MAX_WIDTH} p={[6]}>
-      <Grid container direction="row">
+    <Box m="auto" maxWidth={MAX_WIDTH} px={[1]} py={[6]}>
+      <Grid container direction="row" justify="center">
         <ServiceCard m={[3]} px={[3]} py={[7]}>
           <Box>
             <AspectRatio style={{ fontSize: 50 }} />
@@ -230,7 +242,7 @@ const ServiceCards = () => {
           <Box>
             <Typography>
               <strong>
-                Experienced in scientific computing with python libraries such
+                Experienced in scientific computing with Python libraries such
                 as Tensorflow, Numpy, Pandas, and SciPy.
               </strong>
             </Typography>
@@ -244,7 +256,7 @@ const ServiceCards = () => {
             <Typography>
               <strong>
                 Knowledge in building and consuming gRPC APIs for fast, fault
-                tolerant low overhead HTTP/2 based internal service
+                tolerant, low overhead, HTTP/2 based internal service
                 interactions.
               </strong>
             </Typography>
