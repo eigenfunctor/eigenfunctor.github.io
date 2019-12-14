@@ -4,13 +4,14 @@ import { Link, Grid, Box, Typography } from "@material-ui/core";
 import {
   AspectRatio,
   Assessment,
+  Email,
   FastForward,
   GitHub,
   Http,
+  LinkedIn,
   PictureAsPdf,
   Storage,
-  TableChart,
-  Email
+  TableChart
 } from "@material-ui/icons";
 import Particles from "../components/particles";
 
@@ -104,7 +105,9 @@ const AboutMe = () => {
     <AboutMeContainer maxWidth={MAX_WIDTH}>
       <Grid container direction="row" justify="flex-start">
         <Grid item md={4}>
-          <Box m={[3]} bgcolor="gray" width={250} height={200}></Box>
+          <Box m={[3]} width={250} height={200}>
+            <img src="/profile-photo.jpg" />
+          </Box>
         </Grid>
         <Grid item md={8}>
           <Box m={[3]}>
@@ -146,6 +149,15 @@ const AboutMe = () => {
                 <GitHub fontSize="large" />: &nbsp;
                 <Link href="https://github.com/eigenfunctor">
                   github.com/eigenfunctor
+                </Link>
+              </Description>
+              <Description>
+                <LinkedIn fontSize="large" />: &nbsp;
+                <Link
+                  download
+                  href="https://www.linkedin.com/in/armin-t-55b944199"
+                >
+                  Connect to me on LinkedIn!
                 </Link>
               </Description>
               <Description>
