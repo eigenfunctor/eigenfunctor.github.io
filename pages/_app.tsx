@@ -24,6 +24,18 @@ class App extends NextApp {
         <Head>
           <title>eigenfunctor.io</title>
           <link rel="icon" href="/eigenfunctor_logo.ico" />
+          <style>
+            {`
+      html,body
+      {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+
+      }
+            `}
+          </style>
         </Head>
         <ThemeProvider>
           <CssBaseline />
