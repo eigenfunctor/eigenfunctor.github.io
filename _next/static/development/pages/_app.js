@@ -55378,22 +55378,28 @@ function (_NextApp) {
           lineNumber: 26
         },
         __self: this
-      })), __jsx(_components_theme_provider__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      }), __jsx("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 27
+        },
+        __self: this
+      }, "\n      html,body\n      {\n        width: 100%;\n        margin: 0px;\n        padding: 0px;\n        overflow-x: hidden; \n\n      }\n            ")), __jsx(_components_theme_provider__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
         },
         __self: this
       }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__["CssBaseline"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 41
         },
         __self: this
       }), __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 42
         },
         __self: this
       }))));
