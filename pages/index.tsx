@@ -354,13 +354,6 @@ const Projects = () => {
                           .
                         </Step>
                         <Step>
-                          An isolated and secure{" "}
-                          <Link href="https://couchdb.apache.org/">
-                            CouchDB
-                          </Link>{" "}
-                          database for every user.
-                        </Step>
-                        <Step>
                           A extensible and fully configured{" "}
                           <Link href="https://www.apollographql.com/">
                             GraphQL API
